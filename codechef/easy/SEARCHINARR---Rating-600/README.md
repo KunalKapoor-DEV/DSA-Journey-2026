@@ -60,7 +60,7 @@ NO
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-23T07:10:01.676Z  
+**Submitted:** 2026-10-23T07:10:06.786Z  
 
 ```c_cpp
 char* solve(int N, int X, int A[]) 
