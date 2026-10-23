@@ -1,0 +1,29 @@
+int findMaxConsecutiveOnes(int nums[], int n) 
+{
+    int j = 0;
+    int streak = 0;
+    int save = 0;
+
+    while(j < n)
+    {
+        if(nums[j] == 1)
+        {
+            streak++;
+        }
+        else
+        {
+            streak = 0;
+        }
+
+        if(streak > save)
+        {
+            save = streak;
+        }
+
+        ++j;
+    }
+
+    return save;
+
+}
+
