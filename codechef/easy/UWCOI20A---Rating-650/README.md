@@ -39,60 +39,55 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-23T05:58:15.029Z  
+**Submitted:** 2026-10-23T06:32:27.168Z  
 
 ```c_cpp
 #include <stdio.h>
 
-void maximum(int *arr, int N);
+void maximum(int * arr, int N);
 
 
-int main ()
+int main()
 {
     int T, N;
     int j = 0;
-    
-    scanf("%d", &T);
 
-    while(j < T)
+    scanf("%d", & T);
+
+    while (j < T)
+    {
+        int i = 0;
+        scanf("%d", & N);
+
+        int arr[100000];
+
+        while (i < N)
         {
-            int i = 0;
-            scanf("%d", &N);
-
-            int arr[100000];
-
-                while(i < N)
-                {
-                    scanf("%d", &arr[i]);
-                    ++i;
-                }
-
-            maximum(arr, N);
-            ++j;
+            scanf("%d", & arr[i]);
+            ++i;
         }
+
+        maximum(arr, N);
+        ++j;
+    }
 
     return 0;
 }
 
 
-void maximum(int *arr, int N)
-{
-    int Max = arr[0];
-
-    int i = 1;
-
-    while(i < N)
+void maximum(int * arr, int N)
     {
-        if(Max < arr[i])
+        int Max = arr[0];
+
+        int i = 1;
+
+        while (i < N)
         {
-            Max = arr[i];
-        }
-        ++i;
-    }
-
-    printf("%d\n", Max);
-}
-
+            if (Max < arr[i])
+            {
+                Max = arr[i];
+            }
+            ++i;
 ```
 
 ---
