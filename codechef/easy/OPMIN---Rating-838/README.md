@@ -67,7 +67,7 @@ Since all elements of the final array are $2$, the maximum value of the array is
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-24T07:16:46.980Z  
+**Submitted:** 2026-10-24T07:16:54.942Z  
 
 ```c_cpp
 int countNonMinimum(int a[], int n) {
